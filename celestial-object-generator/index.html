@@ -3,20 +3,37 @@
 <body>
 <h1>celestial object generator</h1>
 
-<canvas id="myCanvas" width=400 height="300" style="border:1px solid #000;">
+<canvas id="myCanvas" width="400" height="300" style="border:1px solid #000;">
 </canvas>
 
-<form id="pointx">
-  <div class="form-group">
-    <input type="text" name="myMessagex" id="myMessagex"/>
-    <input type="text" name="myMessagey" id="myMessagey"/>
-  </div>
+</br>
+Generate galaxy group
+<button onclick="generateGalaxyGroup()">
+  Generate
+</button>
+
+<form id="point">
+  <input type="text" name="myMessagex"/>
+  <input type="text" name="myMessagey"/>
 </form>
 
 <button onclick="markPoint()">
   Mark point
 </button>
 
+
 <script type="text/javascript" src="script.js"></script>
 </body>
+
+<h3>Tutorial</h3>
+Click 'generate galaxy group'. This button will generate 500 neighbor galaxies of your home galaxy. (within 5Mpc) Galaxies with an apparent magnitude more than 8 will be erased.
+
+</br>
+<h3>Supplementary</h3>
+
+7 galaxies are visible (have apparent magnitude less than 6.0) from the Earth. They are Large Magellanic Cloud(0.9), Small Magellanic Cloud(2.7), Andromeda Galxy(3.4), Omega Centauri(3.9), Sagittarius Dwarf Elliptical Galaxy(4.5, not distinguishable), Triangulum Galaxy(5.7), and of course, Milky Way. Centaurus A(6.8), Andromeda XXII(6.5), Bode's Galaxy(6.94) and M83(7.54) is also visible but in very good conditions.
+</br>
+<b>Limiting magnitude</b> is the faintest apparent magnitude of a celestial body that is detectable or detected by a given instrument. Thus, 6 is the limiting magnitude for naked eye. Some people can see nearly 8 from very clear sites.
+</br>
+A telescope is invented in 1608. The one Galileo used could see objects as faint as 8th magnitude. (1611) William Herschel's 40-foot telescope could observe Mimas, a moon of Saturn, which has apparent magnitude 12.9. (1789) There are approximately 50 galaxies brighter than Mimas.
 </html>
